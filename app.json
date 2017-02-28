@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/vacation/vacation",
+    "pages/record/record",
+    "pages/home/home",
+    "pages/exception/exception",
+    "pages/apply/apply",
+    "pages/logs/logs",
+    "pages/attendance/attendance",
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1eb1da",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"white"
+  }
+}

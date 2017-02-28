@@ -1,0 +1,108 @@
+<view style="background-color:#f9f9f9">
+  <view class="date">
+    <view class="date-week">
+      <text class="date-font" style="font-size:16pt">周二</text>
+      <text style="font-size:10pt;font-weight:bold;color:gray;margin-top:5rpx">2月14日</text>
+    </view>
+    <view class="date-mark">
+      <view class="date-circle"></view>
+      <view class="date-line"></view>
+      <view class="date-circle"></view>
+    </view>
+    <view class="date-week">
+      <text class="date-font">{{time[0]}}</text>
+      <text class="date-font" style="margin-top:10rpx">{{time[1]}}</text>
+    </view>
+    
+    <view class="clock" bindtap="punchCard">
+      <text style="color:white;font-size:12pt;font-weight:bold;margin-top:30rpx">打卡</text>
+      <text style="color:#0d667f">{{current}}</text>
+    </view>
+    <view class="smallcircle"></view>
+      <image class="moredirection"style="width:36rpx;height:42rpx;" src="/images/more_blue.png"></image>
+  </view>
+  <view class="tip-apply">
+    <text style="font-size:13pt;font-weight:bold;color:#bababa">我的申请</text>
+  </view>
+
+  <!--出勤-->
+  <view class="apply" bindtap="toattendance">
+    <view class="apply-wraper">
+      <image class="apply-icon" src="/images/point.png"></image>
+      <text style="font-size:14pt;margin-top:10rpx">出勤</text>
+    </view>
+    <view class="excep">
+      <text style="font-size:14pt;color:#f63d7c">{{attendance.exception}}</text>
+      <text style="font-size:12pt;color:#f63d7c">异常</text>
+    </view>
+    <view class="v-space-line"></view>
+    <view class="total">
+      <text style="font-size:14pt">{{attendance.total}}</text>
+      <text class="tip-font">总数</text>
+    </view>
+  </view>
+  <view class="space-line"></view>
+
+  <!--请假-->
+  <view class="apply" bindtap="tovacation">
+    <view class="apply-wraper">
+      <image class="apply-icon" src="/images/vacation.png"></image>
+      <text style="font-size:14pt;margin-top:10rpx">请假</text>
+    </view>
+    <view class="excep">
+      <text style="font-size:14pt">{{leave.processing}}</text>
+      <text class="tip-font">处理中</text>
+    </view>
+    <view class="v-space-line"></view>
+    <view class="total">
+      <text style="font-size:14pt">{{leave.total}}</text>
+      <text class="tip-font">总数</text>
+    </view>
+  </view>
+  <view class="space-line"></view>
+
+  <!--加班-->
+  <view class="apply">
+    <view class="apply-wraper">
+      <image class="apply-icon" src="/images/time.png"></image>
+      <text style="font-size:14pt;margin-top:10rpx">加班</text>
+    </view>
+    <view class="excep">
+      <text style="font-size:14pt">{{over.processing}}</text>
+      <text class="tip-font">处理中</text>
+    </view>
+    <view class="v-space-line"></view>
+    <view class="total">
+      <text style="font-size:14pt">{{over.total}}</text>
+      <text class="tip-font">总数</text>
+    </view>
+  </view>
+  <view class="space-line"></view>
+
+  <!--外出-->
+  <view class="apply">
+    <view class="apply-wraper">
+      <image class="apply-icon" src="/images/outside.png"></image>
+      <text style="font-size:14pt;margin-top:10rpx">外出</text>
+    </view>
+    <view class="excep">
+      <text style="font-size:14pt">{{out.processing}}</text>
+      <text class="tip-font">处理中</text>
+    </view>
+    <view class="v-space-line"></view>
+    <view class="total">
+      <text style="font-size:14pt">{{out.total}}</text>
+      <text class="tip-font">总数</text>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="tip-apply"></view>
+  <view class="apply">
+    <view class="apply-wraper">
+      <image class="apply-icon" src="/images/point.png"></image>
+      <text style="font-size:14pt;margin-top:10rpx">考勤统计</text>
+    </view>
+    <image  class="next" src="/images/more.png"></image> 
+    <!--<text>class="next">></text>-->
+  </view>
+</view>

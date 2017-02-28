@@ -1,0 +1,37 @@
+
+<!--pages/record/record.wxml-->
+<view class="title"style="background-color:#f9f9f9" >
+    <picker class="date" range="{{rangedate}}" bindchange="date">
+      <text class="font-date">{{rangedate[indexdate]}}</text>
+      <image style="width:40rpx;height:40rpx;" src="/images/pull_down.png"></image>
+    </picker>
+    <picker class="type" range="{{rangetype}}" bindchange="type">
+      <image style="width:40rpx;height:40rpx;" src="/images/pull_down.png"></image>
+      <text class="font-date">{{rangetype[indextype]}}</text>
+    </picker>
+  </view>
+<scroll-view style="background-color:#f9f9f9">
+
+  <!--<view class="container">-->
+  
+  <view class="records" wx:for="{{temp}}">
+    <view class="v-record" bindtap="applyDetail">
+      <view class="v-detail">
+        <text class="font-date">{{item.start}}起请假{{item.hours}}天</text>
+        <view class="v-time">
+          <view class="tips">{{item.type_name}}</view>
+          <text class="time">{{item.created}}</text>
+        </view>
+      </view>
+      <view class="v-type">
+        <text class="font-date"  style="color:{{item.color}}">{{item.status_name}}</text>
+      </view>
+    </view>
+    <view class="space-line"></view>
+
+  </view>
+    
+
+  <!--</view>-->
+</scroll-view>
+<button bindtap="tovacation" class="apply">+提申请</button>

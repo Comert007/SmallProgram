@@ -1,0 +1,37 @@
+
+<!--pages/attendance.wxml-->
+<scroll-view style="background-color:#f9f9f9;height:1334rpx">
+  <view class="selection">
+    <view class="all" style="color:{{color1}}" bindtap="selectionA">全部(8)</view>
+    <view class="excep" style="color:{{color2}}" bindtap="selectionE">异常(3)</view>
+  </view>
+  <view class="selected-remark">
+    <view class="selected-line-all" hidden="{{hidden1}}"></view>
+    <view class="selected-line-excep" hidden="{{hidden2}}"></view>
+  </view>
+  <picker class="date" bindchange="select_sheet" range="{{range}}">
+    <text style="font-size:15pt;color:#4a4a4a">{{range[index]}}</text>
+    <image src="/images/pull_down.png" style="width:40rpx;height:40rpx;"></image>
+  </picker>
+  
+  <view wx:for="{{infos}}">
+    <view class="detail">
+      <text class="txt">2月8日</text>
+
+      <!--<view class="block-detail" style="width:{{ewidth}}">
+      <text class="txt-excep" bindtap="exceptap">异常</text>
+    </view>-->
+      <view class="excep-detail">
+        <view class="block" bindtap="excepabsence" hidden="{{item.dhidden}}" style="background-color:{{item.style[0].bgc}};color:{{item.style[0].color}}"> 缺勤</view>
+        <view hidden="{{item.dhidden}}" class="vspace-line"></view>
+        <view hidden="{{item.dhidden}}" class="block" bindtap="excepearly" style="background-color:{{item.style[1].bgc}};color:{{item.style[1].color}}">早退</view>
+        <view hidden="{{item.dhidden}}" class="vspace-line"></view>
+        <view hidden="{{item.dhidden}}" class="block" bindtap="exceplate" style="background-color:{{item.style[2].bgc}};color:{{item.style[2].color}}">迟到</view>
+        <text class="txt-excep" bindtap="exceptap" style="color:{{item.fcolor}}">{{item.name}}</text>
+       
+      </view>
+      
+    </view>
+    <view class="space-line"></view>
+  </view>
+</scroll-view>

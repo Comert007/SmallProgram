@@ -1,0 +1,23 @@
+
+<!--pages/detail/detail.wxml-->
+<scroll-view style="background-color:#f9f9f9;">
+  <view class="content">
+    <text class="tip">异常情况:</text>
+    <text class="reason">2017年1月8日,星期一迟到</text>
+  </view>
+  <view class="tip-content">
+    <text class="tip-edit">情况说明(必填)</text>
+  </view>
+  <textarea class="edit-content" maxlength="140" placeholder="点击输入内容" />
+  <view class="tip-content">
+    <text class="tip-edit">图片</text>
+  </view>
+  <view class="pic">
+    <image class="add" bindtap="addImages" src="/images/add.png"></image>
+    <view wx:for="{{imagePaths}}">
+      <image class="add" bindtap="preview"  style="background-color:#eaeaea;margin-left:10rpx" src="{{item}}">
+      </image>
+    </view>
+  </view>
+  <button class="submit" bindtap="commit">提交</button>
+</scroll-view>

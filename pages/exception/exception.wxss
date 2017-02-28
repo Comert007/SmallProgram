@@ -1,0 +1,63 @@
+.container {
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  padding: 30rpx;
+  flex-direction: column;
+  background-color: white;
+}
+
+.tip {
+  font-size: 14ppt;
+  color: #959595;
+}
+
+.reason {
+  font-size: 14ppt;
+  color: #4a4a4a;
+  font-weight: bold;
+}
+
+.tip-content {
+  padding-top: 37rpx;
+  padding-bottom: 24rpx;
+  padding-left: 30rpx;
+}
+
+.tip-edit {
+  font-size: 14ppt;
+  color: #959595;
+}
+
+.edit-content {
+  width: 100%;
+  background-color: white;
+  padding: 30rpx;
+  height: 150rpx;
+}
+
+.pic {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: white;
+  padding: 30rpx;
+}
+
+.add {
+  width: 115rpx;
+  height: 115rpx;
+}
+
+.submit {
+  background-color: #1eb1da;
+  color: white;
+  margin: 30rpx;
+  margin-top: 390rpx;
+}
+

@@ -1,0 +1,73 @@
+
+<!--pages/apply/apply.wxml-->
+<scroll-view style="background-color:#f9f9f9">
+  <view class="title">
+    <view class="reason">
+      <text>【</text>
+      <text class="font-reason">{{type_name}}</text>
+      <text>】</text>
+      <text class="font-reason" style="margin-left:5rpx">{{hours}}天</text>
+    </view>
+    <view class="time">
+      <text class="font-time">{{created}}</text>
+    </view>
+  </view>
+  <view class="space-line"></view>
+  <view class="detail">
+    <view class="apply-detail">
+      <text class="font-detail">请假类型：</text>
+      <text>{{type_name}}</text>
+    </view>
+    <view class="apply-detail">
+      <text class="font-detail">请假时间：</text>
+      <text>{{start}}至{{end}}</text>
+    </view>
+    <view class="apply-detail">
+      <text class="font-detail">请假时长：</text>
+      <text>{{hours}}天</text>
+    </view>
+    <view class="apply-detail">
+      <text class="font-detail">请假事由：</text>
+      <text>{{reason}}</text>
+    </view>
+  </view>
+  <view class="process">
+    <view class="process-pro">
+      <view>
+        <text>审批过程</text>
+      </view>
+      <image class="img-process" src="/images/message.png" style="width:40rpx;height:40rpx"></image>
+    </view>
+    <view class="process-name">审批中</view>
+  </view>
+  <view class="space-line"></view>
+  <view wx:for="{{approvers}}">
+    <view class="process-detail">
+      <view class="mark">
+        <view class="bottom">
+          <view class="markline" style="background-color:{{item.bgc1}};border: 1rpx {{item.shape1}} {{item.bgc1}}"></view>
+          <view class="markcircle" hidden="{{item.chidden}}" style="background-color:{{item.bgc2}};border: 5rpx solid {{item.bc2}}"></view>
+        </view>
+        <view class="markline1" style="background-color:{{item.bgc3}};border:  1rpx {{item.shape2}} {{item.bgc3}}"></view>
+      </view>
+      <view class="process-per">
+        <view class="per-detail">
+          <view class="left">
+            <image class="avatar" src="{{item.avatar}}"></image>
+            <text style="margin-top:60rpx;margin-left:12rpx;color:#4a4a4a;font-size:14pt"> {{item.username}}</text>
+          </view>
+          <view class="right">
+            <view class="right-pro">
+              <view style="display:flex;flex-direction:row-reverse;color:{{item.color}}">{{item.action}}</view>
+              <view class="font-time">{{item.time}}</view>
+            </view>
+          </view>
+        </view>
+        <view class="reply" hidden="{{item.hidden}}">
+          {{item.remark}}
+        </view>
+        <view class="space-line" style=""></view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

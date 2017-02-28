@@ -1,0 +1,73 @@
+/* pages/vacation/vacation.wxss */
+page {  
+  background-color: #f9f9f9;  
+}
+.line {
+  width: 100%;
+  background-color: #e7e7e7;
+  height: 2rpx;
+}
+
+.space-line {
+  width: 100%;
+  background-color: #e7e7e7;
+  height: 2rpx;
+  margin-left: 30rpx;
+}
+
+.tip {
+  padding-top: 37rpx;
+  padding-bottom: 24rpx;
+  padding-left: 30rpx;
+}
+
+.tip-content {
+  font-size: 14ppt;
+  color: #959595;
+}
+
+.without {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: white;
+  padding-left: 30rpx;
+  padding-top: 35rpx;
+  padding-bottom: 35rpx;
+  padding-right: 30rpx;
+}
+
+.next{
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 30rpx;
+}
+
+.edit-content {
+  width: 100%;
+  background-color: white;
+  padding: 30rpx;
+  height: 150rpx;
+}
+
+.submit {
+  width: 90%;
+  position: absolute;
+  bottom: 20rpx;
+  right: 30rpx;
+  left: 30rpx;
+  background-color: #1eb1da;
+  color: white;
+}
+
+.left{
+  width: 30%
+}
+
+.right{
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 30rpx
+}

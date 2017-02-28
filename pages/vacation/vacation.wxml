@@ -1,0 +1,62 @@
+
+<!--pages/vacation/vacation.wxml-->
+<view style="background-color:#f9f9f9">
+  <view class="line"></view>
+  <view class="tip">
+    <text class="tip-content">基本信息</text>
+  </view>
+  <view class="line"></view>
+  <view class="without">
+    <view class="left">
+      <text style="color:#4a4a4a;font-size:16pt;">请假类型</text>
+    </view>
+    <picker class="right" range="{{rangeType}}" bindchange="type">
+      <text style="color:#b9b9b9;font-size:14pt;margin-right:10rpx">{{rangeType[typeIndex]}}</text>
+      <image class="next" src="/images/more.png"></image>
+    </picker>
+  </view>
+  
+  <view class="space-line"></view>
+
+ <view class="without">
+    <view class="left">
+      <text style="color:#4a4a4a;font-size:16pt;">开始时间</text>
+    </view>
+    <picker class="right" mode="date" start="2017-01-01" value="{{time}}" end="2019-12-31" bindchange="start">
+      <text style="color:#b9b9b9;font-size:14pt;margin-right:10rpx">{{rangeStart}}</text>
+      <image class="next" src="/images/more.png"></image>
+    </picker>
+  </view>
+
+  <view class="space-line"></view>
+   <view class="without">
+    <view class="left">
+      <text style="color:#4a4a4a;font-size:16pt;">结束时间</text>
+    </view>
+    <picker class="right" mode="date" value="{{time}}" start="2017-01-01" end="2019-12-31" bindchange="end">
+      <text style="color:#b9b9b9;font-size:14pt;margin-right:10rpx">{{rangeEnd}}</text>
+      <image class="next" src="/images/more.png"></image>
+    </picker>
+  </view>
+
+  <view class="space-line"></view>
+
+   <view class="without">
+    <view class="left">
+      <text style="color:#4a4a4a;font-size:16pt;">请假天数</text>
+    </view>
+    <picker class="right" range="{{rangeDays}}" bindchange="day">
+      <text style="color:#b9b9b9;font-size:14pt;margin-right:10rpx">{{rangeDays[dayIndex]}}</text>
+      <image class="next" src="/images/more.png"></image>
+    </picker>
+  </view>
+
+  <view class="line"></view>
+  <view class="tip">
+    <text class="tip-content">补充说明(非必填)</text>
+  </view>
+  <textarea bindinput="line_change" class="edit-content" maxlength="140" placeholder="点击输入内容" />
+</view>
+<view>
+  <button bindtap="toapply" class="submit" disabled="{{disabled}}">提交</button>
+</view>

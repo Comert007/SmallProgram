@@ -1,0 +1,213 @@
+/* pages/apply/apply.wxss */
+page {  
+  background-color: #f9f9f9;  
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-top: 31rpx;
+  padding-bottom: 36rpx;
+  background-color: white;
+}
+
+.reason {
+  width: 40%;
+}
+
+.time {
+  width: 60%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.font-reason {
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+.font-time {
+  font-size: 14pt;
+  color: #c2c2c2;
+}
+
+.space-line {
+  width: 100%;
+  background-color: #e7e7e7;
+  height: 2rpx;
+  margin-left: 30rpx;
+  background: 2rpx dotted #e7e7e7; 
+}
+
+.detail {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 18rpx;
+  padding-bottom: 30rpx;
+}
+
+.apply-detail {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-top: 18rpx;
+}
+
+.font-detail {
+  color: #4a4a4a;
+  font-size: 14pt;
+}
+
+.process {
+  padding-top: 40rpx;
+  padding-bottom: 32rpx;
+  display: flex;
+  flex-direction: row;
+  padding-left: 30rpx;
+}
+
+.img-process {
+  margin-left: 10rpx;
+  margin-top: 5rpx;
+}
+
+.process-pro {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.process-name {
+  width: 50%;
+  color: #1eb1da;
+  font-size: 14pt;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 30rpx;
+}
+.process-detail{
+  display: flex;flex-direction: row;
+}
+.process-per {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.per-mark {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mark{
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+}
+
+.markline{
+  background-color: #47d39f;
+  width: 2rpx;
+  height: 80rpx;
+}
+.bottom{
+  position: absolute;
+  left: 50rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.markcircle{
+  margin-bottom: -20rpx;
+  width: 20rpx;
+  height: 20rpx;
+  margin-left: -12rpx;
+  background-color: white;
+  border-radius: 50%; 
+  border: 5rpx solid #c2c2c2
+}
+
+.markline1{
+  background-color: #47d39f;
+   margin-top: 80rpx;
+  margin-left: 50rpx;
+  width: 2rpx;
+  height: 100%;
+}
+
+
+/*.markdotcircle{
+  width: 24rpx;
+  height: 24rpx;
+  margin-left: 5rpx;
+  background-color: white;
+  border-radius: 50%; 
+  border: 5rpx solid #c2c2c2
+}
+
+.markcircle{
+  width: 33rpx;
+  height: 33rpx;
+  margin-left: 5rpx;
+  background-color: #47d39f;
+  border-radius: 50%; 
+}*/
+/*.mark-line{
+  width: 2rpx;
+  height: 68rpx;
+  background-color: #47d39f
+  
+}
+
+.mark-circle{
+  width: 24rpx;
+  height: 24rpx;
+  background-color: #47d39f;
+  border-radius: 50%;
+}*/
+.per-detail {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 30rpx;
+  padding-right: 30rpx;
+}
+
+.right-pro {
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar {
+  margin-left: 12rpx;
+  width: 85rpx;
+  height: 85rpx;
+  border-radius: 50%;
+  border: 7rpx solid #47d39f;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.reply {
+  margin-right: 30rpx;
+  margin-bottom: 30rpx;
+  background-color: white;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  font-size: 12pt;
+  color: #c2c2c2;
+  padding: 12rpx;
+}
